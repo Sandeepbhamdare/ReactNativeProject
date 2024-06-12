@@ -6,7 +6,7 @@ function Login() {
 
     return (
         <>
-            {/* <Text style={styles.headText}>Login</Text> */}
+            <Text style={styles.headText}>Login</Text>
 
             <SafeAreaView>
                 <Image style={{ width: 400, height: 400 }} source={require('../public/Login-bro.png')} />
