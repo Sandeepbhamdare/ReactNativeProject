@@ -1,11 +1,17 @@
 import React from "react";
 import { Alert, Button, Image, SafeAreaView, StyleSheet, Text, TextInput, View } from "react-native";
+import { Path, Svg } from "react-native-svg";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 function Login() {
 
     return (
         <>
+            <Svg viewBox="0 0 1440 330"
+            height={90}>
+                <Path fill="#0099ff"  d="M0,192L40,170.7C80,149,160,107,240,85.3C320,64,400,64,480,80C560,96,640,128,720,154.7C800,181,880,203,960,202.7C1040,203,1120,181,1200,197.3C1280,213,1360,267,1400,293.3L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></Path>
+            </Svg>
+
             <Text style={styles.headText}>Login</Text>
 
             <SafeAreaView>
@@ -52,7 +58,7 @@ const styles = StyleSheet.create({
 
     headText: {
         // backgroundColor: "#e8554a",
-        paddingTop: 55,
+     marginTop:-35,
         fontSize: 30,
         textAlign: "center",
         fontWeight: "bold"
@@ -77,7 +83,7 @@ const styles = StyleSheet.create({
         // backgroundColor: "#4287f5",
         fontSize: 16,
         width: "80%",
-        paddingHorizontal: 8
+        paddingHorizontal: 10
 
     },
     logInBtn: {
@@ -86,8 +92,8 @@ const styles = StyleSheet.create({
         marginTop: 10,
     },
     textForgotPass: {
-        textAlign: "right", 
-        marginTop: -10, 
+        textAlign: "right",
+        marginTop: -10,
         fontSize: 15,
         color: "#4287f5"
     },
