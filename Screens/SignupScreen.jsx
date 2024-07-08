@@ -1,19 +1,17 @@
 import React from "react";
-import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { Button, ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
 import { Path, Svg } from "react-native-svg";
 import Icon from "react-native-vector-icons/FontAwesome";
 import MaterialIcon from "react-native-vector-icons/MaterialIcons";
-function Signup() {
+function Signup({navigation}) {
 
     return (
-        <>
+        <ScrollView>
             <Svg
                 height={88}
                 viewBox="0 0 1440 322">
                 <Path fill="#0099ff" d="M0,0L120,32C240,64,480,128,720,138.7C960,149,1200,107,1320,85.3L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></Path>
             </Svg>
-
-            <Text style={styles.headText}>Sign Up</Text>
 
             <View style={styles.formContainer}>
                 <View style={styles.formInputs}>
@@ -52,11 +50,13 @@ function Signup() {
 
                     <Button
                         title="Sign up"
+                        onPress={()=>navigation.navigate("Home")}
                     />
                 </View>
             </View>
 
-            <Text style={styles.linkText}>Already have an account? <Text style={{ color: "#4287f5" }}>Log in</Text></Text>
+            <Text style={styles.linkText}>Already have an account? <Text style={{ color: "#4287f5" }}
+            onPress={()=>navigation.navigate("Login")}>Log in</Text></Text>
 
             <View style={styles.linkContainer}>
                 <View style={styles.linkBtn}>
@@ -82,9 +82,9 @@ function Signup() {
                     />
                 </Svg>
 
-                <View style={{ height: 48, width: "100%", backgroundColor: "#0099ff" }}></View>
+                <View style={{ height: 64, width: "100%", backgroundColor: "#0099ff" }}></View>
             </View>
-        </>
+        </ScrollView>
     )
 }
 
@@ -93,13 +93,6 @@ const styles = StyleSheet.create({
         // height:Dimensions.get("window").height,
         // height:760,
         backgroundColor: "red",
-    },
-    headText: {
-        marginTop:-18,
-        paddingBottom: 50,
-        fontSize: 30,
-        textAlign: "center",
-        fontWeight: "bold"
     },
 
     waves: {
