@@ -9,6 +9,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/Feather";
 import Login from "./Screens/LoginScreen.jsx";
 import Signup from "./Screens/SignupScreen.jsx";
+import Splash from "./Screens/SplashScreen.jsx";
 
 
 const Stack = createNativeStackNavigator();
@@ -37,8 +38,12 @@ export default function App() {
 
   return (
     <>
+
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName="SplashScreen">
+
+          <Stack.Screen name="SplashScreen" component={Splash} options={{ headerShown: false }} />
+
           <Stack.Screen name="Auth" component={Auth} options={{ headerShown: false }} />
 
           <Stack.Screen name="Home" component={HomeScreen}
