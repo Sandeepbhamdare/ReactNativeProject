@@ -19,7 +19,8 @@ const HomeScreenStack = () => {
                     headerSearchBarOptions: "Search",
                     headerStyle: {
                         backgroundColor: "#8881d8",
-                    }
+                    },
+                    headerTintColor:"#e6ebff"
                 }} />
         </Stack.Navigator>
     )
