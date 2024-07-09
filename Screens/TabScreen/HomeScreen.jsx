@@ -28,12 +28,12 @@ const styles=StyleSheet.create({
     listItem:{
         fontSize:15,
         paddingHorizontal:10,
-        paddingVertical:5
+        paddingVertical:6
     },
     activeItem:{
         borderRadius:12,
         borderColor:"#5d579c",
-        borderWidth:1,
+        borderWidth:2,
         color:"#5d579c"
     }
 })
