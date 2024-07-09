@@ -4,12 +4,12 @@ import { StyleSheet, View, Text, Image, Alert } from "react-native";
 const Splash = ({ navigation }) => {
 
     const [animation, setAnimation] = useState(true)
-    const [isAuthenticate, setIsAuthenticate] = useState(false)
+    const [isAuthenticate, setIsAuthenticate] = useState(true)
 
     useEffect(() => {
         setTimeout(() => {
             setAnimation(false)
-            navigation.replace(isAuthenticate === true ? "Home" : "Auth")
+            navigation.replace(isAuthenticate === true ? "TabNavigationRoutes" : "Auth")
         }, 5000)
     }, [])
 
