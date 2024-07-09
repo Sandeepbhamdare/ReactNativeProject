@@ -5,9 +5,12 @@ import NotesContainer from "../../components/NotesContainer";
 export default function Home() {
     return (
         <>
-            {/* <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-                <Text>Home Screen</Text>
-            </View> */}
+        <View style={styles.filterList}>
+            <Text style={[styles.listItem,styles.activeItem]}>All</Text>
+            <Text style={styles.listItem}>Personal</Text>
+            <Text style={styles.listItem}>General</Text>
+            <Text style={styles.listItem}>To-do</Text>
+        </View>
             <NotesContainer/>
         </>
     )
@@ -15,8 +18,22 @@ export default function Home() {
 
 const styles=StyleSheet.create({
 
-    header:{
-        height:80,
-        backgroundColor:"#8881d8"
+    filterList:{
+        backgroundColor:"#e6ebff",
+        flexDirection:"row",
+        gap:15,
+        paddingHorizontal:20,
+        paddingVertical:12
+    },
+    listItem:{
+        fontSize:15,
+        paddingHorizontal:10,
+        paddingVertical:5
+    },
+    activeItem:{
+        borderRadius:12,
+        borderColor:"#5d579c",
+        borderWidth:1,
+        color:"#5d579c"
     }
 })

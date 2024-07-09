@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",
         flexWrap: "wrap",
-        // backgroundColor: "#EDECFE",
         padding: 15,
         gap: 12
     },
