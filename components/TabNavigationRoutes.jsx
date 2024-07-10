@@ -55,7 +55,7 @@ export default function TabNavigationRoutes() {
               options={{ headerShown: false }}
             />
             <Tab.Screen name="profile" component={ProfileScreenStack}
-                options={{ headerShown: false }} />
+                 options={{ headerShown: false }}  />
             <Tab.Screen name='feedback' component={FeedbackScreenStack}
                 options={{ headerShown: false }} />
         </Tab.Navigator>
