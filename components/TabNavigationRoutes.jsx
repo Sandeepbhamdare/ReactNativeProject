@@ -42,7 +42,14 @@ const FeedbackScreenStack = () => {
     return (
         <Stack.Navigator initialRouteName="FeedbackScreen">
             <Stack.Screen name="FeedbackScreen" component={Feedback}
-                options={{ headerShown: false }} />
+               options={{
+                headerTitle: "FeedBack",
+                headerStyle: {
+                    backgroundColor: "#8881d8",
+                },
+                headerTintColor:"#e6ebff",
+                headerTitleAlign:"center"
+            }} />
         </Stack.Navigator>
     )
 }
