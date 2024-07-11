@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         gap: 10,
         marginVertical: 18,
-        paddingTop: 35
+        paddingTop: 24
     },
     linkIcons: {
         backgroundColor: "#8881d8",
