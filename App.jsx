@@ -7,6 +7,7 @@ import Login from "./Screens/LoginScreen.jsx";
 import Signup from "./Screens/SignupScreen.jsx";
 import Splash from "./Screens/SplashScreen.jsx";
 import TabNavigationRoutes from "./components/TabNavigationRoutes.jsx";
+import AddNote from "./Screens/AddNoteScreen.jsx";
 
 
 const Stack = createNativeStackNavigator();
@@ -43,17 +44,15 @@ export default function App() {
 
           <Stack.Screen name="Auth" component={Auth} options={{ headerShown: false }} />
 
-          {/* <Stack.Screen name="Home" component={HomeScreen}
-            options={{
-              headerSearchBarOptions: "Search",
-              headerLeft: () => (
-                <Icon name="menu" size={25} color={"black"} style={{ marginRight: 10 }}
-                  onPress={() => Alert.alert("Menu")} />
-              )
-            }} /> */}
           <Stack.Screen name="TabNavigationRoutes" component={TabNavigationRoutes}
             options={{ headerShown: false }} />
 
+         <Stack.Screen name="add Note" component={AddNote} 
+          options={{headerStyle:{
+          backgroundColor:"#8881d8"
+         },
+         headerTintColor:"#e6ebff"
+         }}/>
         </Stack.Navigator>
       </NavigationContainer>
     </>

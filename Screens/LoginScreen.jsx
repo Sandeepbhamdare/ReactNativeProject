@@ -48,7 +48,6 @@ function Login({navigation}) {
                 <Text style={styles.linkTxt}>Don't have an account? <Text style={styles.specialText} onPress={()=>navigation.navigate('Signup')}>Sign up</Text></Text>
             </View>
         </ScrollView>
-
     )
 }
 
