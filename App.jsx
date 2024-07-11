@@ -18,13 +18,16 @@ const Auth = () => {
     <Stack.Navigator>
       <Stack.Screen name="Login" component={Login}
         options={{
-          headerStyle: { backgroundColor: "#0099ff" },
-          headerTitleStyle: { color: "white" }
+          headerStyle: { backgroundColor: "#8881d8" },
+          headerTitleStyle: { color: "white" },
+          headerShadowVisible:false
         }} />
       <Stack.Screen name="Signup" component={Signup}
         options={{
-          headerStyle: { backgroundColor: "#0099ff" },
-          headerTitleStyle: { color: "white" }
+          headerStyle: { backgroundColor: "#8881d8" },
+          headerTitleStyle: { color: "white" },
+          headerShadowVisible:false,
+          headerTintColor:"white"
         }} />
     </Stack.Navigator>
 

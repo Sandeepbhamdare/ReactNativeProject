@@ -4,7 +4,7 @@ import { StyleSheet, View, Text, Image, Alert } from "react-native";
 const Splash = ({ navigation }) => {
 
     const [animation, setAnimation] = useState(true)
-    const [isAuthenticate, setIsAuthenticate] = useState(true)
+    const [isAuthenticate, setIsAuthenticate] = useState(false)
 
     useEffect(() => {
         setTimeout(() => {

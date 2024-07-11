@@ -9,7 +9,7 @@ function Login({navigation}) {
         <ScrollView>
             <Svg viewBox="0 0 1440 330"
                 height={90}>
-                <Path fill="#0099ff" d="M0,192L40,170.7C80,149,160,107,240,85.3C320,64,400,64,480,80C560,96,640,128,720,154.7C800,181,880,203,960,202.7C1040,203,1120,181,1200,197.3C1280,213,1360,267,1400,293.3L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></Path>
+                <Path fill="#8881d8" d="M0,192L40,170.7C80,149,160,107,240,85.3C320,64,400,64,480,80C560,96,640,128,720,154.7C800,181,880,203,960,202.7C1040,203,1120,181,1200,197.3C1280,213,1360,267,1400,293.3L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></Path>
             </Svg>
 
             <SafeAreaView>
@@ -19,7 +19,7 @@ function Login({navigation}) {
             <View style={styles.formContainer}>
 
                 <View style={styles.formInputs}>
-                    <Icon name="user" size={25} />
+                    <Icon name="user" size={25} color={"#2b284d"} />
                     <TextInput
                         style={styles.inputs}
                         value=""
@@ -28,7 +28,7 @@ function Login({navigation}) {
                 </View>
 
                 <View style={styles.formInputs}>
-                    <Icon name="lock" size={25} />
+                    <Icon name="lock" size={25} color={"#2b284d"}/>
                     <TextInput
                         style={styles.inputs}
                         value=""
@@ -41,7 +41,8 @@ function Login({navigation}) {
                 <View style={styles.logInBtn}>
 
                     <Button
-                        onPress={() => navigation.navigate("Home")}
+                        onPress={() => navigation.navigate("TabNavigationRoutes")}
+                        color={"#8881d8"}
                         title="Loign" />
 
                 </View>
@@ -71,7 +72,6 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     inputs: {
-        // backgroundColor: "#4287f5",
         fontSize: 16,
         width: "80%",
         paddingHorizontal: 12
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
         marginTop: 12
     },
     specialText: {
-        color: "#4287f5"
+        color: "#8881d8"
     }
 })
 
