@@ -1,12 +1,13 @@
 import React from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome"
+import SettingsScreen from "./SettingsScreen";
 
 export default function Profile() {
 
     return (
         <>
-            <View style={{ flex: 1 }}>
+            {/* <View style={{ flex: 1 }}>
                 <View style={styles.profileContainer}>
                     <Icon name="sign-out" size={25} style={styles.logOutBtn} />
                     <Text style={styles.headText}>Profile Info</Text>
@@ -14,7 +15,8 @@ export default function Profile() {
                     <Text style={styles.detailText}>User Name : User1</Text>
                     <Text style={styles.detailText}>Email: User1@gmail.com</Text>
                 </View>
-            </View>
+            </View> */}
+          <SettingsScreen/>
         </>
     )
 }

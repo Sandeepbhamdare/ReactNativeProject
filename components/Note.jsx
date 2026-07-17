@@ -4,7 +4,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 export default function Note({navigation}){
 
     return (
-        <Pressable>
+        <Pressable onPress={()=>navigation.navigate('edit Note')}>
             <View style={styles.card}>
                 <Text style={styles.cardHead}>Title</Text>
                 <Text style={styles.cardTag}>Tag : Personal</Text>
